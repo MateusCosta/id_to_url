@@ -1,0 +1,36 @@
+{
+  "name": "Id to URL",
+  "description" : "Id to URL Extension",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "version": "1.0",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon":{
+      "16": "images/id_to_url.png",
+      "32": "images/id_to_url.png",
+      "48": "images/id_to_url.png",
+      "128": "images/id_to_url.png"
+    } 
+  },
+  "options_page": "options.html",
+  "icons":{
+    "16": "images/id_to_url.png",
+    "32": "images/id_to_url.png",
+    "48": "images/id_to_url.png",
+    "128": "images/id_to_url.png"
+  },
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["script.js"],
+    "persistent": false
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Alt+K",
+        "mac": "Alt+K"
+      },
+      "description": "Opens index.html"
+    }
+  }
+}
